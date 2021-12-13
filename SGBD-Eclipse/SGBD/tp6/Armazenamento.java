@@ -30,8 +30,6 @@ public class Armazenamento {
 					}
 				}
 			
-			//statement.executeUpdate("INSERT INTO Funcionario VALUES("+ID_Funciona+", '"+Nome+"', '"+Cargo+"', "+ID_Empresa+", "+ID_Localiza+")");
-			
 			return true;
 		}
 		catch(SQLException e) {

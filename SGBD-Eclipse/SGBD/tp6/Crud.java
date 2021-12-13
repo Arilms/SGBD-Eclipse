@@ -33,7 +33,7 @@ public class Crud {
 			while (rs.next()) {
 				String rua = rs.getString("Rua");
 				
-				System.out.println(rua);
+				System.out.println("Rua = "+rua);
 			}
 			
 			return true;
@@ -51,7 +51,7 @@ public class Crud {
 			while (rs.next()) {
 				String rua = rs.getString("Rua");
 				
-				System.out.println("Rua = "+rua);
+				System.out.println("Rua : "+rua);
 			}
 			
 			return true;

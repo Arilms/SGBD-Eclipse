@@ -11,19 +11,31 @@ public class Main {
 		conexao.abrirConexao();
 		Crud crud = new Crud(conexao.getConnection());
 		
+		
 		crud.create(0,"Floriano_Peixoto",1211,"Perto_do_posto_ipiranga","123446-789","Fortaleza","Ceara");
 		crud.create(1,"Floriano_Peixoto",1111,"Perto_do_posto","123456-789","Fortaleza","Ceara");
 		crud.create(2,"Saldanha_Marinho",4321,"Perto_de_uma_pedra_grande","123654-789","Fortaleza","Ceara");
 		crud.create(3,"Rua_Ficticia",1234,"Do_lado_de_uma_escola","321123-432","Fortaleza","Ceara");
 		crud.create(4,"Teste",5421,"teste denovo","312123-333","Testo","Testa");
 		
-		//crud.update(4,"teste 2");
 		
-		//crud.delete(4);
+		
+		
+		crud.read("Teste");
+		
+		crud.update(4,"teste 2");
+		
+		crud.read("teste 2");
+		
+		crud.delete(4);
 		
 		crud.read("Floriano_Peixoto");
 		
+		crud.create(4,"Teste",5421,"teste denovo","312123-333","Testo","Testa");
+		
 		crud.readlike("Rua");
+		
+		
 		
 		
 		
