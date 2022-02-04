@@ -43,10 +43,10 @@ public class Crud {
 		}
 	}
 	
-	public boolean readlike(String Rua) {
+	public boolean readlike(String Rua, String Algo) {
 		try {
 			Statement statement = this.conexao.createStatement();
-			ResultSet rs = statement.executeQuery("SELECT * FROM Localizacao WHERE "+Rua+" LIKE '%a%'");
+			ResultSet rs = statement.executeQuery("SELECT * FROM Localizacao WHERE "+Rua+" LIKE '%'"+Algo+"'%'");
 			
 			while (rs.next()) {
 				String rua = rs.getString("Rua");

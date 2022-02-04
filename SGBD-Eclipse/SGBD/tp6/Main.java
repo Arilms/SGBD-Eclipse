@@ -33,7 +33,7 @@ public class Main {
 		
 		crud.create(4,"Teste",5421,"teste denovo","312123-333","Testo","Testa");
 		
-		crud.readlike("Rua");
+		crud.readlike("Rua","a");
 		
 		
 		
